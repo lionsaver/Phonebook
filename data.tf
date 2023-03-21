@@ -23,12 +23,12 @@ data "aws_subnets" "subnet" {
 #   }
 }
 
-data "aws_subnets" "subnet" {
-  filter {
-    name = "vpc-id"
-    values = [var.vpc_id]
-  }
-}
+# data "aws_subnets" "subnet" {
+#   filter {
+#     name = "vpc-id"
+#     values = [var.vpc_id]
+#   }
+# }
  
 data "aws_subnet" "subnet_value" {
   for_each = toset(data.aws_subnets.subnet.ids)
