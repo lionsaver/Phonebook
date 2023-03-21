@@ -31,8 +31,7 @@ variable "aws_region" {
 }
 
 variable "vpc_id" {
-    default = "vpc-0dd50cabd4ed57343"
-  
+  default = "vpc-0dd50cabd4ed57343"  
 }
 
 variable "domain_name" {
